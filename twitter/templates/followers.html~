@@ -1,0 +1,9 @@
+{% for follower in followers %}
+    <a href="/user_tweets?name="{{ follower.name }}>
+    {{ follower.name }}
+    <br>    
+    <img src="{{ follower.profile_image_url }}"></a>
+    <br>
+    <br>
+    {{ follower }}
+{% endfor %}
